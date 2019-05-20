@@ -20,6 +20,9 @@ apt install snapd -y
 echo "################ VSCODE ################"
 snap install code --classic
 
+echo "################ ESLINT EXTENSION ################"
+code --install-extension dbaeumer.vscode-eslint
+
 echo "################ CURL ################"
 apt install curl -y
 
@@ -32,3 +35,10 @@ apt-get install -y build-essential
 
 echo "################ VUE ################"
 npm install -g @vue/cli
+
+echo "################ POSTMAN ################"
+snap install postman
+
+echo "################ GITKRAKEN ################"
+snap install gitkraken
+
