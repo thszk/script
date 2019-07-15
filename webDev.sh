@@ -27,6 +27,10 @@ echo "################ ESLINT EXTENSION ################"
 # code --install-extension dbaeumer.vscode-eslint
 apm install linter-eslint
 
+echo "################ ATOM MATERIAL UI EXTENSION ################"
+apm install atom-material-ui
+apm install atom-material-syntax-dark
+
 echo "################ CURL ################"
 apt install curl -y
 
@@ -49,4 +53,3 @@ snap install insomnia
 
 # echo "################ GITKRAKEN ################"
 # snap install gitkraken
-
