@@ -31,6 +31,9 @@ echo "################ ATOM MATERIAL UI EXTENSION ################"
 apm install atom-material-ui
 apm install atom-material-syntax-dark
 
+echo "################ VUE HIGHLIGHT ################"
+apm install language-vue
+
 echo "################ CURL ################"
 apt install curl -y
 
