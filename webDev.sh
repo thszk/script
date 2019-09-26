@@ -17,22 +17,22 @@ apt install git -y
 echo "################ SNAP ################"
 apt install snapd -y
 
-# echo "################ VSCODE ################"
-# snap install code --classic
+echo "################ VSCODE ################"
+snap install code --classic
 
-echo "################ ATOM ################"
-snap install atom --classic
+# echo "################ ATOM ################"
+# snap install atom --classic
 
 echo "################ ESLINT EXTENSION ################"
-# code --install-extension dbaeumer.vscode-eslint
-apm install linter-eslint
+code --install-extension dbaeumer.vscode-eslint
+# apm install linter-eslint
 
-echo "################ ATOM MATERIAL UI EXTENSION ################"
-apm install atom-material-ui
-apm install atom-material-syntax-dark
+# echo "################ ATOM MATERIAL UI EXTENSION ################"
+# apm install atom-material-ui
+# apm install atom-material-syntax-dark
 
-echo "################ VUE HIGHLIGHT ################"
-apm install language-vue
+# echo "################ VUE HIGHLIGHT ################"
+# apm install language-vue
 
 echo "################ CURL ################"
 apt install curl -y
@@ -48,8 +48,8 @@ apt-get install -y build-essential
 echo "################ VUE ################"
 npm install -g @vue/cli
 
-# echo "################ POSTMAN ################"
-# snap install postman
+echo "################ POSTMAN ################"
+snap install postman
 
 echo "################ INSOMNIA ################"
 snap install insomnia
