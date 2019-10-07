@@ -1,0 +1,38 @@
+{
+  // themes
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // font
+  "editor.fontSize": 14,
+  // "editor.lineHeight": 20,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontWeight": "400", // Regular
+  "editor.fontLigatures": true,
+
+  // terminal
+  "terminal.integrated.shell.linux": "/bin/zsh",
+
+  // eslint config site vuejs-brasil
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+
+  // vetur format pedro victorino
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+}

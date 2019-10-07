@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+\\",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+[Quote]",
+    "command": "workbench.action.terminal.newInActiveWorkspace"
+  },
+]
