@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$USER" != "root" ]; then
-    echo "Without execute permission" && exit 1
+	echo "Without execute permission" && exit 1
 fi
 
 
@@ -35,33 +35,21 @@ echo "################ VSCODE ################"
 snap install code --classic
 
 echo "################ INSOMNIA ################"
-snap install insomnia
+# https://support.insomnia.rest/article/23-installation
+apt install wget -y
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" | tee -a /etc/apt/sources.list.d/insomnia.list
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | apt-key add -
+apt update
+apt install insomnia -y
 
 ###################################################################
-# echo "################ ESLINT EXTENSION ################"
-# su - $USER -c "code --install-extension dbaeumer.vscode-eslint"
-# apm install linter-eslint
-#
-# echo "################ ATOM ################"
-# snap install atom --classic
-#
 # echo "################ POSTMAN ################"
 # snap install postman
-#
-# echo "################ GITKRAKEN ################"
-# snap install gitkraken
-#
-# echo "################ ATOM MATERIAL UI EXTENSION ################"
-# apm install atom-material-ui
-# apm install atom-material-syntax-dark
-#
-# echo "################ VUE HIGHLIGHT ################"
-# apm install language-vue
 ###################################################################
 
 echo ""
-echo "On Debian need to create a snap app symbolic link"
-echo "$ sudo ln -s /snap/bin/app /usr/bin/app"
+echo "Add snap binary path to .bashrc or .zshrc file"
+echo " export PATH=$PATH:/snap/bin"
 echo ""
 echo "run the commands to install vsCode extentions:"
 echo ""
