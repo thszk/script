@@ -14,9 +14,6 @@ apt upgrade -y
 echo "################ GIT ################"
 apt install git -y
 
-echo "################ SNAP ################"
-apt install snapd -y
-
 echo "################ CURL ################"
 apt install curl -y
 
@@ -50,18 +47,24 @@ apt install insomnia -y
 ###################################################################
 # echo "################ POSTMAN ################"
 # snap install postman
+# echo "################ SNAP ################"
+# apt install snapd -y
 ###################################################################
 
-echo ""
-echo "Add snap binary path to .bashrc or .zshrc file"
-echo " export PATH=$PATH:/snap/bin"
-echo ""
-echo "run the commands to install vsCode extentions:"
-echo ""
-echo "$ code --install-extension dbaeumer.vscode-eslint \\"      # eslint
-echo "code --install-extension octref.vetur \\"                  # vetur
-echo "code --install-extension mikestead.dotenv \\"              # dotenv
-echo "code --install-extension dracula-theme.theme-dracula \\"   # theme
-echo "code --install-extension pkief.material-icon-theme \\"     # icon
-echo "code --install-extension formulahendry.auto-close-tag \\"
-echo "code --install-extension formulahendry.auto-rename-tag"
+###################################################################
+# code --install-extension dbaeumer.vscode-eslint
+# code --install-extension octref.vetur
+# code --install-extension mikestead.dotenv
+# code --install-extension dracula-theme.theme-dracula
+# code --install-extension pkief.material-icon-theme
+# code --install-extension formulahendry.auto-close-tag
+# code --install-extension formulahendry.auto-rename-tag
+###################################################################
+
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension octref.vetur
+code --install-extension mikestead.dotenv
+code --install-extension dracula-theme.theme-dracula
+code --install-extension pkief.material-icon-theme
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
