@@ -28,11 +28,20 @@ apt install -y build-essential
 echo "################ VUE ################"
 npm install -g @vue/cli
 
-echo "################ SNAP ################"
-apt install snapd -y
-
 echo "################ VSCODE ################"
-snap install code --classic
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+install apt-transport-https
+update
+install code
 
 echo "################ INSOMNIA ################"
-snap install insomnia
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add -
+
+apt-get update
+apt-get install insomnia -y
