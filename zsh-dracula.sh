@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#####################################
+#   This script is on development
+#####################################
 
 if [ "$USER" != "root" ]; then    
     echo "Are you root?" && exit 1
