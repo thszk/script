@@ -42,3 +42,13 @@ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" | tee -a /etc/apt/sourc
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | apt-key add -
 apt update
 apt install insomnia -y
+
+# echo "################ HEROKU Standalone ################"
+# https://devcenter.heroku.com/articles/heroku-cli
+# curl https://cli-assets.heroku.com/install.sh | sh
+# Uninstall
+# rm /usr/local/bin/heroku
+# rm -rf /usr/local/lib/heroku /usr/local/heroku
+# rm -rf ~/.local/share/heroku ~/.cache/heroku
+echo "################ HEROKU ################"
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh

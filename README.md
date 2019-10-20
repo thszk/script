@@ -8,6 +8,6 @@ Há dois scripts para instalação de softwares, um para extensões do vs code e
 
 ### Development Softwares
 
-Git, Node.js, NPM, Vue.js, VS Code, Insomnia
+Git, Node.js, NPM, Vue.js, VS Code, Insomnia, Heroku
 
 ### 
